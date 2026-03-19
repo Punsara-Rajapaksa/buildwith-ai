@@ -6,32 +6,35 @@
   color: #121316;
 }
 
+/* Sidebar */
 .sidebar {
-  width: 286px;
+  width: 220px; 
   background: #f5f5f6;
-  padding: 28px 32px 26px;
+  padding: 20px 20px 20px; 
   display: flex;
   flex-direction: column;
-  gap: 54px;
+  gap: 32px; 
   border-right: 1px solid #d7d8dc;
-  flex: 0 0 286px;
+  flex: 0 0 220px;
 }
 
+/* Logo */
 .logo {
-  font-size: 49px;
+  font-size: 24px; 
   font-weight: 500;
-  line-height: 1;
-  letter-spacing: -0.048em;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
   color: #151517;
   white-space: nowrap;
 }
 
+/* Nav item */
 .nav-item {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 8px;
   color: #6e7179;
-  font-size: 38px;
+  font-size: 16px; 
   font-weight: 450;
   line-height: 1;
   padding: 0;
@@ -40,23 +43,25 @@
 
 .nav-item svg {
   color: #7c8088;
-  width: 37px;
-  height: 37px;
+  width: 18px; 
+  height: 18px;
   flex-shrink: 0;
 }
 
+/* Workspace */
 .workspace {
   flex: 1;
   display: flex;
   flex-direction: column;
-  padding: 30px 30px 22px;
+  padding: 20px 20px 18px; 
   background: #f5f5f6;
   min-width: 0;
 }
 
+/* Preview canvas */
 .preview-canvas {
   flex: 1;
-  border-radius: 20px;
+  border-radius: 16px; 
   border: 1px solid #d9dadd;
   background: #fdfdfe;
   box-shadow:
@@ -65,18 +70,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px; 
   min-height: 0;
 }
 
+/* Placeholder text */
 .preview-placeholder {
   color: #8c8f97;
-  font-size: 23px;
+  font-size: 16px; 
   font-weight: 400;
-  line-height: 1.25;
+  line-height: 1.5;
   text-align: center;
 }
 
+/* Input bar */
 .input-bar {
   width: 100%;
 }
@@ -87,6 +94,7 @@
   align-items: center;
 }
 
+/* Input wrapper */
 .input-wrapper {
   flex: 1;
   display: flex;
@@ -94,8 +102,8 @@
   background: #f9f9fa;
   border: 1px solid #cfd1d6;
   border-radius: 999px;
-  height: 64px;
-  padding: 0 22px;
+  height: 44px;
+  padding: 0 16px;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8);
   transition: border-color 0.15s ease, box-shadow 0.15s ease;
 }
@@ -107,24 +115,26 @@
     0 0 0 3px rgba(114, 128, 160, 0.12);
 }
 
+/* Icon inside input */
 .input-icon {
   color: #8d919a;
-  margin-right: 16px;
-  width: 26px;
-  height: 26px;
+  margin-right: 10px;
+  width: 18px;
+  height: 18px;
   stroke-width: 1.75;
   flex-shrink: 0;
 }
 
+/* Input field */
 .prompt-input {
   flex: 1;
   border: none;
   outline: none;
   padding: 0;
-  font-size: 39px;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 1;
-  letter-spacing: -0.012em;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
   background: transparent;
   color: #3c3f46;
   min-width: 0;
@@ -134,21 +144,22 @@
   color: #777b84;
 }
 
+/* Generate button */
 .generate-button {
   background: linear-gradient(180deg, #5573ad 0%, #405f9b 100%);
   color: #f4f7ff;
   border: none;
   border-radius: 999px;
-  height: 64px;
-  min-width: 236px;
-  padding: 0 26px;
-  font-size: 46px;
+  height: 44px; 
+  min-width: 120px; 
+  padding: 0 20px; 
+  font-size: 16px; 
   font-weight: 500;
   line-height: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 12px;
+  gap: 8px; 
   cursor: pointer;
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.18),
@@ -164,74 +175,77 @@
   transform: translateY(1px);
 }
 
+/* Icon inside button */
 .generate-button svg {
-  width: 31px;
-  height: 31px;
+  width: 18px; 
+  height: 18px;
   stroke: #d9e4ff;
   stroke-width: 2;
 }
 
+/* Helper text */
 .helper-text {
-  margin-top: 12px;
-  font-size: 20px;
+  margin-top: 8px; 
+  font-size: 13px; 
   color: #565961;
   font-weight: 400;
   text-align: right;
-  padding-right: 6px;
+  padding-right: 4px; 
   letter-spacing: 0.002em;
 }
 
+/* Responsive adjustments */
 @media (max-width: 1200px) {
   .sidebar {
-    width: 220px;
-    flex-basis: 220px;
-    padding: 24px 20px;
-    gap: 34px;
+    width: 180px;
+    flex-basis: 180px;
+    padding: 16px 16px;
+    gap: 24px;
   }
 
   .logo {
-    font-size: 36px;
+    font-size: 20px;
   }
 
   .nav-item {
-    font-size: 28px;
+    font-size: 14px;
   }
 
   .nav-item svg {
-    width: 26px;
-    height: 26px;
+    width: 16px;
+    height: 16px;
   }
 
   .workspace {
-    padding: 24px 22px 18px;
+    padding: 16px 16px 14px;
   }
 
   .preview-placeholder {
-    font-size: 19px;
+    font-size: 14px;
   }
 
   .input-wrapper,
   .generate-button {
-    height: 50px;
+    height: 40px;
   }
 
   .prompt-input {
-    font-size: 25px;
+    font-size: 14px;
   }
 
   .generate-button {
-    min-width: 168px;
-    font-size: 30px;
-    gap: 8px;
+    min-width: 100px;
+    font-size: 14px;
+    gap: 6px;
   }
 
   .generate-button svg {
-    width: 22px;
-    height: 22px;
+    width: 16px;
+    height: 16px;
   }
 
   .helper-text {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 
@@ -245,66 +259,66 @@
     flex-basis: auto;
     border-right: none;
     border-bottom: 1px solid #d7d8dc;
-    padding: 16px 18px;
-    gap: 16px;
+    padding: 12px 14px;
+    gap: 12px;
   }
 
   .logo {
-    font-size: 32px;
+    font-size: 20px;
   }
 
   .nav-item {
-    font-size: 22px;
+    font-size: 14px;
   }
 
   .workspace {
-    padding: 16px 14px 14px;
+    padding: 14px 12px 12px;
   }
 
   .preview-canvas {
-    margin-bottom: 16px;
+    margin-bottom: 12px;
   }
 
   .input-form {
     flex-direction: column;
     align-items: stretch;
-    gap: 10px;
+    gap: 8px;
   }
 
   .input-wrapper,
   .generate-button {
     width: 100%;
     min-width: 0;
-    height: 48px;
+    height: 40px;
   }
 
   .input-wrapper {
-    padding: 0 16px;
+    padding: 0 12px;
   }
 
   .input-icon {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
   }
 
   .prompt-input {
-    font-size: 19px;
+    font-size: 14px;
   }
 
   .generate-button {
-    font-size: 24px;
+    font-size: 16px;
     justify-content: center;
   }
 
   .generate-button svg {
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
   }
 
   .helper-text {
-    margin-top: 8px;
-    font-size: 12px;
+    margin-top: 6px;
+    font-size: 11px;
     text-align: center;
     padding-right: 0;
   }
