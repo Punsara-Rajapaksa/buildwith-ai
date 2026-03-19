@@ -201,7 +201,7 @@
 
 /* Helper text */
 .helper-text {
-  margin-top: 8px; 
+  margin-top: 4px; 
   font-size: 13px; 
   color: #565961;
   font-weight: 400;
@@ -299,7 +299,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 
 .sample-chip {
