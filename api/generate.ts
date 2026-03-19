@@ -38,7 +38,7 @@ export default async function handler(
       },
       body: JSON.stringify({
         // We'll use the free model "openrouter/hunter-alpha" for now
-        model: 'openrouter/hunter-alpha',
+        model: 'xiaomi/mimo-v2-pro',
         messages: [
           {
             role: 'system',
