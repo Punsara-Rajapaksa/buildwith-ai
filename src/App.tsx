@@ -7,29 +7,20 @@ function App() {
   const [samplePrompts, setSamplePrompts] = useState<string[]>([]);
 
   // Larger pool of example prompts
-  const allPrompts = [
-    "Create a login form with email and password",
-    "Add a hero section with a title and a button",
-    "Make a card with an image, title and 'Learn more' link",
-    "Design a pricing table with three columns",
-    "Add a dark mode toggle button",
-    "Create a contact form with name, email and message",
-    "Build a navigation bar with dropdown menu",
-    "Add a footer with social media icons",
-    "Make a testimonial slider with profile pictures",
-    "Create a progress bar that fills on click",
-    "Add a countdown timer to an event",
-    "Design a profile card with avatar and stats",
-    "Insert a responsive image gallery",
-    "Create a simple calculator UI",
-    "Add a sticky header that changes color on scroll",
-    "Make a modal popup with a close button",
-    "Design a toggle switch",
-    "Add a tooltip on hover",
-    "Create a loading spinner animation",
-    "Build a todo list with checkboxes",
-  ];
-
+const allPrompts = [
+  "Add a red button that says 'Click Me'",
+  "Create a heading that says 'Welcome to my site'",
+  "Add a paragraph with lorem ipsum text",
+  "Make a simple card with a border and padding",
+  "Add an image placeholder",
+  "Change the background color to light blue",
+  "Create a navigation bar with three links",
+  "Add a footer with copyright text",
+  "Make a list of three items",
+  "Add a text input field with a label",
+  "Create a blue box with rounded corners",
+  "Add a hover effect that changes button color",
+];
   // Pick 3 random prompts
   const pickRandomPrompts = () => {
     const shuffled = [...allPrompts].sort(() => 0.5 - Math.random());
