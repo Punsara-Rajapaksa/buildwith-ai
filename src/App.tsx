@@ -1,12 +1,13 @@
-import { useState, useEffect } from 'react';
-import { Paperclip, Wand2, Folder, Code2, RefreshCw } from 'lucide-react';
-import './App.css';
+import { useState, useEffect } from 'react'; // helps with state and lifecycle
+import { Paperclip, Wand2, Folder, Code2, RefreshCw } from 'lucide-react'; // provides react components for icons
+import './App.css'; // custom css file
 
+// holds what the user types and the sample prompts
 function App() {
   const [prompt, setPrompt] = useState('');
   const [samplePrompts, setSamplePrompts] = useState<string[]>([]);
 
-  // Larger pool of example prompts
+// Larger pool of example prompts
 const allPrompts = [
   "Add a red button that says 'Click Me'",
   "Create a heading that says 'Welcome to my site'",
