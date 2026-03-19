@@ -2,14 +2,14 @@
   display: flex;
   width: 100vw;
   height: 100vh;
-  background: #f5f5f6;
+  background: #ffffff;
   color: #121316;
 }
 
 /* Sidebar */
 .sidebar {
   width: 220px; 
-  background: #f5f5f6;
+  background: #ffffff;
   padding: 20px 20px 20px; 
   display: flex;
   flex-direction: column;
@@ -24,7 +24,7 @@
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: -0.02em;
-  color: #151517;
+  color: #3964fe;
   white-space: nowrap;
 }
 
@@ -54,7 +54,7 @@
   display: flex;
   flex-direction: column;
   padding: 20px 20px 18px; 
-  background: #f5f5f6;
+  background: #ffffff;
   min-width: 0;
 }
 
@@ -63,7 +63,7 @@
   flex: 1;
   border-radius: 16px; 
   border: 1px solid #d9dadd;
-  background: #fdfdfe;
+  background: #ffffff;
   box-shadow:
     0 2px 4px rgba(16, 24, 40, 0.03),
     0 10px 24px rgba(16, 24, 40, 0.06);
@@ -99,7 +99,7 @@
   flex: 1;
   display: flex;
   align-items: center;
-  background: #f9f9fa;
+  background: #ffffff;
   border: 1px solid #cfd1d6;
   border-radius: 999px;
   height: 44px;
@@ -146,7 +146,7 @@
 
 /* Generate button */
 .generate-button {
-  background: linear-gradient(180deg, #5573ad 0%, #405f9b 100%);
+  background: #3964fe;
   color: #f4f7ff;
   border: none;
   border-radius: 999px;
@@ -168,7 +168,8 @@
 }
 
 .generate-button:hover {
-  filter: brightness(1.03);
+  background: #2b4fdb;
+  filter: none;
 }
 
 .generate-button:active {
