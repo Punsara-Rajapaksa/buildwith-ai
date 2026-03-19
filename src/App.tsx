@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Paperclip, Wand2, Folder } from 'lucide-react'; // Import icons
+import { Paperclip, Wand2, Folder, Code2 } from 'lucide-react'; // Import icons
 import './App.css';
 
 function App() {
@@ -24,7 +24,8 @@ function App() {
       <main className="workspace">
         <div className="preview-canvas">
           <div className="preview-placeholder">
-            Your webpage preview will appear here...
+            <Code2 size={32} className="placeholder-icon" />
+            <p>Your webpage preview will appear here...</p>
           </div>
         </div>
 
