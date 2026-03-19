@@ -199,14 +199,13 @@
   stroke-width: 2;
 }
 
-/* Helper text */
 .helper-text {
-  margin-top: 2px; 
-  font-size: 13px; 
+  margin-top: 0;           /* remove top margin, handled by row */
+  font-size: 13px;
   color: #565961;
   font-weight: 400;
-  text-align: right;
-  padding-right: 4px; 
+  text-align: right;       /* keep right alignment within its flex space */
+  padding-right: 4px;
   letter-spacing: 0.002em;
 }
 
@@ -270,12 +269,21 @@
   }
 }
 
-/* Sample chips */
+/* New row for helper text and samples header */
+.samples-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;        
+  margin-bottom: 8px;      /* space below before chips */
+}
+
+/* Adjust samples-header – remove its own margins, let row control spacing */
 .samples-header {
   display: flex;
   align-items: center;
   gap: 8px;
-  margin: 12px 0 8px 0;
+  margin: 0;               /* remove all margins */
 }
 
 .samples-title {

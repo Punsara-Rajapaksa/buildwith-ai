@@ -74,15 +74,16 @@ const allPrompts = [
               <span>Generate</span>
             </button>
           </form>
-
-          {/* Sample chips section */}
-          <div className="samples-header">
-            <span className="samples-title">Try an example:</span>
-            <RefreshCw
-              size={14}
-              className="refresh-icon"
-              onClick={() => setSamplePrompts(pickRandomPrompts())}
-            />
+          <div className="samples-row">
+            <div className="samples-header">
+              <span className="samples-title">Try an example:</span>
+              <RefreshCw
+                size={14}
+                className="refresh-icon"
+                onClick={() => setSamplePrompts(pickRandomPrompts())}
+              />
+            </div>
+            <div className="helper-text">Press Enter or click Generate</div>
           </div>
           <div className="samples">
             {samplePrompts.map((sample, index) => (
@@ -95,8 +96,6 @@ const allPrompts = [
               </span>
             ))}
           </div>
-
-          <div className="helper-text">Press Enter or click Generate</div>
         </footer>
       </main>
     </div>
