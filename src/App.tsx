@@ -19,6 +19,7 @@ function App() {
           <Folder size={19} strokeWidth={1.65} />
           <span>Projects</span>
         </div>
+        <div className="sidebar-footer">v0.1 · BuildWith AI</div>
       </aside>
 
       <main className="workspace">
