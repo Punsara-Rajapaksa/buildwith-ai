@@ -270,6 +270,56 @@
   }
 }
 
+/* Sample chips */
+.samples-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 12px 0 8px 0;
+}
+
+.samples-title {
+  font-size: 13px;
+  color: #565961;
+  font-weight: 400;
+}
+
+.refresh-icon {
+  color: #8d919a;
+  cursor: pointer;
+  transition: color 0.1s, transform 0.1s;
+}
+
+.refresh-icon:hover {
+  color: #3964fe;
+  transform: rotate(30deg);
+}
+
+.samples {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.sample-chip {
+  background: #f0f2f5;
+  color: #3c3f46;
+  font-size: 13px;
+  padding: 6px 14px;
+  border-radius: 30px;
+  border: 1px solid #d9dadd;
+  cursor: pointer;
+  transition: background 0.1s, border-color 0.1s, color 0.1s;
+  white-space: nowrap;
+}
+
+.sample-chip:hover {
+  background: #e4e7ec;
+  border-color: #8d95a9;
+  color: #1e293b;
+}
+
 @media (max-width: 820px) {
   .app {
     flex-direction: column;
@@ -348,4 +398,13 @@
     text-align: center;
     padding-right: 0;
   }
+
+  .samples-header {
+    margin: 10px 0 6px 0;
+  }
+
+  .sample-chip {
+    font-size: 12px;
+    padding: 5px 12px;
+  }  
 }
