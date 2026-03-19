@@ -263,6 +263,10 @@
     flex-direction: column;
   }
 
+  .sidebar::after {
+  display: none;
+}
+
   .sidebar {
     width: 100%;
     flex-basis: auto;
