@@ -8,14 +8,25 @@
 
 /* Sidebar */
 .sidebar {
+  position: relative;
   width: 220px; 
   background: #ffffff;
   padding: 20px 20px 20px; 
   display: flex;
   flex-direction: column;
   gap: 32px; 
-  border-right: 1px solid #d7d8dc;
   flex: 0 0 220px;
+}
+
+/* Create the shortened vertical line */
+.sidebar::after {
+  content: '';
+  position: absolute;
+  right: 0;                      /* stick to the right edge */
+  top: 4%;                        /* start 4% from the top */
+  height: 92%;                    /* cover 92% of the sidebar height */
+  width: 1.5px;
+  background: #d0d2d7;           
 }
 
 /* Logo */
@@ -110,9 +121,6 @@
 
 .input-wrapper:focus-within {
   border-color: #8d95a9;
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.8),
-    0 0 0 3px rgba(114, 128, 160, 0.12);
 }
 
 /* Icon inside input */
