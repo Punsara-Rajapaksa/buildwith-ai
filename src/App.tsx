@@ -1,16 +1,53 @@
+import { useState } from 'react';
+import { Paperclip, Wand2, Folder } from 'lucide-react'; // Import icons
+import './App.css';
+
 function App() {
+  const [prompt, setPrompt] = useState('');
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    // TODO: Connect to AI
+    console.log('Prompt:', prompt);
+  };
+
   return (
-    <div style={{ height: '100vh', display: 'flex', flexDirection: 'column' }}>
-      <div style={{ flex: 1, background: '#f3f4f6', padding: '1rem' }}>
-        Preview area will go here
-      </div>
-      <div style={{ borderTop: '1px solid #ccc', padding: '1rem', background: 'white' }}>
-        <input
-          type="text"
-          placeholder="Describe the webpage you want..."
-          style={{ width: '100%', padding: '0.5rem', fontSize: '1rem' }}
-        />
-      </div>
+    <div className="app">
+      <aside className="sidebar">
+        <div className="logo">BuildWith AI</div>
+        <div className="nav-item">
+          <Folder size={19} strokeWidth={1.65} />
+          <span>Projects</span>
+        </div>
+      </aside>
+
+      <main className="workspace">
+        <div className="preview-canvas">
+          <div className="preview-placeholder">
+            Your webpage preview will appear here...
+          </div>
+        </div>
+
+        <footer className="input-bar">
+          <form onSubmit={handleSubmit} className="input-form">
+            <div className="input-wrapper">
+              <Paperclip size={18} className="input-icon" />
+              <input
+                type="text"
+                value={prompt}
+                onChange={(e) => setPrompt(e.target.value)}
+                placeholder="e.g., 'Add a black header with a title'"
+                className="prompt-input"
+              />
+            </div>
+            <button type="submit" className="generate-button">
+              <Wand2 size={18} />
+              <span>Generate</span>
+            </button>
+          </form>
+          <div className="helper-text">Press Enter or click Generate</div>
+        </footer>
+      </main>
     </div>
   );
 }
