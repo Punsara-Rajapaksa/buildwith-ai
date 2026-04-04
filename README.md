@@ -30,17 +30,15 @@
 
 ### Home Screen
 
-<img width="1366" height="600" alt="image" src="https://github.com/user-attachments/assets/67ff4395-d903-4a5b-8e8b-1533a8859cf8" />
+<img width="1366" height="672" alt="image" src="https://github.com/user-attachments/assets/f3c02f23-38ba-4942-8401-c016c2d9f91b" />
 
 ### Loading State
 
-<img width="1366" height="680" alt="image" src="https://github.com/user-attachments/assets/b291423f-f7f6-4073-b685-af4efa773c79" />
-
-
+<img width="1366" height="666" alt="image" src="https://github.com/user-attachments/assets/97f54d7c-5f28-4661-9243-e85db16218e4" />
 
 ### Generated Result Example
 
-<img width="1366" height="678" alt="image" src="https://github.com/user-attachments/assets/54d8d11b-e857-4454-97e8-c8a3fb2c1a2b" />
+<img width="1366" height="673" alt="image" src="https://github.com/user-attachments/assets/eb838281-a963-4c5e-82da-33b05b8d8dea" />
 
 ---
 
