@@ -30,7 +30,7 @@
 
 ### Home Screen
 
-<img width="1366" height="650" alt="image" src="https://github.com/user-attachments/assets/67ff4395-d903-4a5b-8e8b-1533a8859cf8" />
+<img width="1366" height="600" alt="image" src="https://github.com/user-attachments/assets/67ff4395-d903-4a5b-8e8b-1533a8859cf8" />
 
 ### Loading State
 
