@@ -30,14 +30,17 @@
 
 ### Home Screen
 
-
+<img width="1366" height="680" alt="image" src="https://github.com/user-attachments/assets/67ff4395-d903-4a5b-8e8b-1533a8859cf8" />
 
 ### Loading State
+
+<img width="1366" height="680" alt="image" src="https://github.com/user-attachments/assets/b291423f-f7f6-4073-b685-af4efa773c79" />
 
 
 
 ### Generated Result Example
 
+<img width="1366" height="678" alt="image" src="https://github.com/user-attachments/assets/54d8d11b-e857-4454-97e8-c8a3fb2c1a2b" />
 
 ---
 
